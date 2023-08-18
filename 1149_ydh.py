@@ -1,4 +1,4 @@
-def min_cost(n, costs):
+def rgb(n, costs):
     # dp[i][j]: i번째 집을 j색으로 칠할 때의 최소 비용
     dp = [[0] * 3 for _ in range(n)]
     dp[0] = costs[0]
@@ -17,5 +17,5 @@ for _ in range(n):
     r, g, b = map(int, input().split())
     costs.append((r, g, b))
 
-result = min_cost(n, costs)
+result = rgb(n, costs)
 print(result)
