@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/1012.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/1149.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/11729.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/16637bracket.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/1699.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/17609.py" beforeDir="false" />
     </list>
@@ -58,5 +59,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
