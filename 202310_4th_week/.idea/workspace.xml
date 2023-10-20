@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee54d96-7069-4328-b536-04160fa6e9c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SWEA_5653_cell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SWEA_5656_bricks.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_5656_bricks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
@@ -34,7 +35,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.SWEA_5656_bricks">
+  <component name="RunManager" selected="Python.test">
     <configuration name="SWEA_5656_bricks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="202310_4th_week" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SWEA_5656_bricks" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.SWEA_5656_bricks" />
         <item itemvalue="Python.SWEA_5658_password" />
       </list>
     </recent_temporary>
@@ -149,16 +150,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,7 @@
 import copy
 from collections import deque
 
-def BFS(sy, sx, sp):
+def BFS(sy, sx, sp, ar):
     visited = [[0] * W for _ in range(H)]
     Q = deque()
     Q.append((sy, sx, sp))
@@ -16,7 +16,7 @@ def BFS(sy, sx, sp):
                 if 0 > new_y or 0 > new_x or new_y >= H or new_x >= W:
                     continue
 
-                new_p = arr[new_y][new_x]
+                new_p = ar[new_y][new_x]
                 # 빈 칸이면 pass
                 if new_p == 0:
                     continue
@@ -58,7 +58,7 @@ def permutations(cnt):
                 h += 1
             if h == H:
                 continue
-            visited_arr = BFS(h, j, check_arr[h][j])
+            visited_arr = BFS(h, j, check_arr[h][j], check_arr)
             # 배열 돌면서 벽돌 없애기
             for n in range(H):
                 for m in range(W):
@@ -87,7 +87,8 @@ for tc in range(1, T+1):
     arr = [list(map(int, input().split())) for _ in range(H)]
     directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
     path = [-1] * N
+    path_test = [2, 2, 6]
     nums = list(range(W))
     min_bricks = float('inf')
     permutations(0)
-    print(min_bricks)
+    print(f'#{tc} {min_bricks}')
