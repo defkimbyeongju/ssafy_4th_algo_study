@@ -5,7 +5,7 @@ for tc in range(1, T + 1):
     # 숫자의 개수와 크기 순서 입력
     N, K = map(int, input().split())
     # 16진수 숫자 리스트로 입력
-    treasure = list(map(str, input()))
+    treasure = input()
 
     # 보물상자의 크기 T 설정
     T = len(treasure)
