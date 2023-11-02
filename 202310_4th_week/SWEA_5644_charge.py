@@ -1,4 +1,3 @@
-import pprint
 
 def BFS(sy, sx, c, i):
     global MAP
