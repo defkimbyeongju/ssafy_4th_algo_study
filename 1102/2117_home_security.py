@@ -43,7 +43,7 @@ def security(K, i, j):
             if abs(i-y) + abs(j-x) < K and arr[y][x] == 1:
                 cnt += 1
     temp = (M * cnt) - (K ** 2 + (K - 1) ** 2)
-    if temp >= 0:
+    if temp >= 0: # 손해를 보지 않는다면
         max_profit = max(cnt, max_profit)
 
 
