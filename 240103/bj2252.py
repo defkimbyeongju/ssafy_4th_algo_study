@@ -9,7 +9,7 @@ n, m = map(int, input().split())
 graph = [[] for _ in range(n+1)]
 in_degree = [0 for _ in range(n+1)]
 queue = deque()
-answer = []
+T = []
 
 for i in range(m):
     a, b = map(int, input().split())
@@ -22,11 +22,11 @@ for i in range(1, n+1):
 
 while queue:
     now = queue.popleft()
-    answer.append(now)
+    T.append(now)
     for next in graph[now]:
         in_degree[next] -= 1
         if in_degree[next] == 0:
             queue.append(next)
 
-print(*answer)
+print(*T)
 
