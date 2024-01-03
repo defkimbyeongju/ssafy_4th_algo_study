@@ -3,6 +3,8 @@ sys.stdin = open('test.txt')
 input = sys.stdin.readline
 from collections import deque
 
+
+# https://yoongrammer.tistory.com/86
 # n 명이 학생, m개의 비교
 n, m = map(int, input().split())
 
