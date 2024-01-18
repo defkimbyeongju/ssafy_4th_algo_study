@@ -13,8 +13,8 @@ def bisect(e, value):
         if value < d[mid]:
             e = mid
         else:
-            s = mid # 이렇게 하면 시간 초과 남
-            # s = mid + 1
+            # s = mid 이렇게 하면 시간 초과 남
+            s = mid + 1
     return e
 
 for i in range(n):
@@ -24,7 +24,7 @@ for i in range(n):
         d.append(arr[i])
     else:
         idx = bisect(len(d), arr[i])
-        if arr[i] < d[idx]: 
+        if arr[i] < d[idx]: # 이 줄 없어도 맞다고 나옴 근데 이유 모름..
             d[idx] = arr[i]
 
 

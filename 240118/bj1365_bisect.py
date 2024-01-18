@@ -12,6 +12,7 @@ for i in range(n):
         res.append(line[i])
     else:   # line[i]가 res의 마지막 요소보다 작으면 이분탐색 하여 나온 index위치의 값과 교환
         tmp = bisect_left(res, line[i])
+        
         res[tmp] = line[i]
 
 
