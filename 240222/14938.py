@@ -22,7 +22,7 @@ for area in range(1, n + 1):
     while q:
         now, moved = q.popleft()
         for next, distance in connected[now]:
-            if dijk[next] >= moved + distance:
+            if dijk[next] > moved + distance:
                 q.append([next, moved + distance])
                 dijk[next] = moved + distance
     answer = max(answer, sum([items[i] for i, t in enumerate(dijk) if t <= m]))
