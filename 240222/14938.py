@@ -1,10 +1,9 @@
 from collections import deque
 
 n, m, r = map(int, input().split())
-items = [0] * (n + 1)
-for i, t in enumerate(list(map(int, input().split())), 1):
-    items[i] = t
-# areas = [0, 5, 7, 8, 2, 3]
+items = list(map(int, input().split()))
+items.insert(0, 0)
+# items = [0, 5, 7, 8, 2, 3]
     
 connected = [[] for _ in range(n + 1)]
 for _ in range(r):
