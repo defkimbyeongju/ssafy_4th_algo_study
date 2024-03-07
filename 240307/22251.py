@@ -40,7 +40,7 @@ nowfloor = [int(digit) for digit in x_str] # [0,0,0,0,1,4]
 
 everynum = dict()
 
-for i in range(9): 
+for i in range(10): 
     eachNum = dict()
     nowdigital = digitalnum[i]
     for key, value in digitalnum.items():
@@ -49,11 +49,25 @@ for i in range(9):
         eachNum[key] = count
     everynum[i] = eachNum
 
+cnt = 0
 
-# 1층부터 K+1층까지
-for floor in range(1,X+1):
-    for i in range(K):
-        pass
+# 1층부터 999990층까지
+for f in range(1, N + 1):
+    if f == X:
+        continue
+    current = str(f).zfill(K)
+    current = [int(digit) for digit in current] # 만약에 1층이랑 비교하면 [0,0,0,0,0,1]
+    diff = 0
+    for i in range(K): #nowfloor = [0,0,0,0,1,4]
+        diff += everynum[nowfloor[i]][current[i]]
+    
+    if diff <= P:
+        cnt += 1
+        # print(current)
+
+print(cnt)
+
+    
         # 지금 내 층이랑 nowfloor랑 비교해서 횟수가 많으면 카운트 안하고 
         
 
@@ -62,7 +76,7 @@ for floor in range(1,X+1):
 
 
 # print(everynum) # {0: {0: 3, 1: 5, 2: 4, 3: 2, 4: 3, 5: 0, 6: 1, 7: 4, 8: 2, 9: 1}}
-resarr = set()
+# resarr = set()
 # for key, value in everynum[0].items():
 #     print(key, value)
 
@@ -88,6 +102,6 @@ resarr = set()
 
 # dfs(nowfloor, 0, 0) # [0,0,0,0,1,4]
 
-print(resarr)
-print(len(resarr))
+# print(resarr)
+# print(len(resarr))
 
