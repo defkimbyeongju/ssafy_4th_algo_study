@@ -60,6 +60,8 @@ for f in range(1, N + 1):
     diff = 0
     for i in range(K): #nowfloor = [0,0,0,0,1,4]
         diff += everynum[nowfloor[i]][current[i]]
+        if diff > P:
+            break
     
     if diff <= P:
         cnt += 1
